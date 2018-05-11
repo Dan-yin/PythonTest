@@ -1,4 +1,4 @@
-impot os
+import os
 
 for i in range(10):
-	i
+	print(i)
