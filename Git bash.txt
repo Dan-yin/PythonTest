@@ -1,0 +1,25 @@
+Git bash command:
+
+git config --global user.name
+
+git config --global user.email
+
+git init
+
+git add <file>
+
+git commit -m "update info"
+
+git status
+
+git diff
+
+git log
+
+git reset --hard HEAD^
+
+git reflog
+
+git checkout
+
+git rm
