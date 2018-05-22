@@ -1,0 +1,39 @@
+
+
+JSON base on object&arry
+
+object :
+{
+    "string'" : "value",
+    "string2" : "value2"
+}
+
+arry:
+[value,value2,value3]
+
+value can be: {
+    string
+    number
+    object
+    arry
+    true
+    false
+    null
+}
+
+string can be :{
+    unicode except  \
+    \"
+    \\
+    \/
+    \b
+    \f
+    \t 
+    ....
+}
+
+number can be:{
+    just like C++&java
+    
+}
+
