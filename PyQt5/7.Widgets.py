@@ -217,5 +217,5 @@ class Example5(QWidget):
 if __name__ == '__main__':
     
     app = QApplication(sys.argv)
-    ex = Example5()
+    ex = Example()
     sys.exit(app.exec_())
