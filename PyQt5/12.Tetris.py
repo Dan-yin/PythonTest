@@ -16,8 +16,9 @@ class Tetris(QMainWindow):
         self.setCentralWidget(self.tboard)
  
         self.statusbar = self.statusBar()
+        #show socre
         self.tboard.msg2Statusbar[str].connect(self.statusbar.showMessage)
- 
+
         self.tboard.start()
  
         self.resize(180, 380)
@@ -34,10 +35,11 @@ class Tetris(QMainWindow):
  
 class Board(QFrame):
     msg2Statusbar = pyqtSignal(str)
- 
+    #each is block
     BoardWidth = 10
     BoardHeight = 22
-    Speed = 300
+    #Speed = 300
+    Speed = 30000
  
     def __init__(self, parent):
         super().__init__(parent)
@@ -53,7 +55,8 @@ class Board(QFrame):
         self.curY = 0
         self.numLinesRemoved = 0
         self.board = []
- 
+
+        #set focus policy 
         self.setFocusPolicy(Qt.StrongFocus)
         self.isStarted = False
         self.isPaused = False

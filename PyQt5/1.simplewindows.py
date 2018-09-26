@@ -1,4 +1,7 @@
 import sys
+import os
+
+import PyQt5
 from PyQt5.QtWidgets import QApplication,QWidget
 
 if __name__ == "__main__":
@@ -8,3 +11,5 @@ if __name__ == "__main__":
     w.setWindowTitle('simplewindows')
     w.show()
     sys.exit(app.exec_())
+
+#os.system('pause')
